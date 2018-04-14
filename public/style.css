@@ -1,6 +1,5 @@
 body {
     font-family: 'Merriweather', serif;
-    width: 99%;
 }
 
 h1 {
@@ -45,11 +44,6 @@ input {
 
 button {
     margin: 5px;
-}
-
-footer {
-    color: black;
-    background-color: #e9dddd;  
 }
 
 .hidden {
@@ -120,6 +114,10 @@ footer {
     width: 100%;
 }
 
+#cardtitletext {
+    text-shadow: 0.5px 0.5px #d3d3d3;
+}
+
 .promiseP {
     margin: 0 auto;
     padding-bottom: 20px;
@@ -127,7 +125,7 @@ footer {
     width: 80%;
 }
 
-#boxOne, #boxTwo, #boxThree {
+/* #boxOne, #boxTwo, #boxThree {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,13 +135,11 @@ footer {
     width: 27%;
     background-color: white;
     border-radius: 15px;
-}
+} */
 
 #plane, #tree, #plant {
-    height: 50%;
-    width: 80%;
-    border-radius: 15px;
-    margin-bottom: 10%;
+    height: 400px;
+    width: 100%;
 }
 
 #thirdSec {

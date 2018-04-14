@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <meta name="author" content="Andrew Tabudlo">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Munder Difflin</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <main>
+    <body>
+        <nav>
+            <div class="nav-wrapper blue lighten-2">
+                <a href="#" class="brand-logo">Munder Difflin</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/">About</a></li>
+                    <li><a href="/staff">Staff</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+          <%= yield %>
+
+      </main>
+
+      <footer class="center" id="footer">
+            &#169; Munder Difflin 2018
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
