@@ -60,12 +60,6 @@ button {
     animation-fill-mode: forwards;
 }
 
-.container {
-    margin: 0 auto;
-    padding-top: 10%;
-    height: 100px;
-}
-
 #firstSec {
     text-align: center;
     height: 100vh;
