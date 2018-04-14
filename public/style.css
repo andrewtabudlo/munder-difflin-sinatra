@@ -1,0 +1,271 @@
+body {
+    font-family: 'Merriweather', serif;
+    width: 99%;
+}
+
+h1 {
+    margin: 0 0;
+    color: white;
+    font-size: 6em;
+    text-shadow: 0.5px 0.5px #d3d3d3;
+    position: relative;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+h1:hover {
+	transform: rotateY(180deg);
+}
+
+.jumbofont {
+    color: white;
+    text-shadow: 0.5px 0.5px #d3d3d3;
+}
+
+#newslettertext {
+    margin: 5px;
+}
+
+h4 {
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+}
+
+input {
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+}
+
+footer {
+    color: black;
+    background-color: #e9dddd;  
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.hide {
+    animation: fadeOut 600ms;
+    animation-fill-mode: forwards;
+}
+
+.show {
+    animation: fadeIn 600ms;
+    animation-fill-mode: forwards;
+}
+
+.container {
+    margin: 0 auto;
+    padding-top: 10%;
+    height: 100px;
+}
+
+#firstSec {
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #c9ced6;
+    background-image: url("images/main.jpeg");
+    background-size: cover;
+}
+
+#containerOne {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#inputContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #64b5f6;
+    height: 100px;
+    width: 300px;
+    border-radius: 15px;
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#secondSec {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #739dcd;
+}
+
+#containerTwo {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.promiseP {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+#boxOne, #boxTwo, #boxThree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 70%;
+    width: 27%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#plane, #tree, #plant {
+    height: 50%;
+    width: 80%;
+    border-radius: 15px;
+    margin-bottom: 10%;
+}
+
+#thirdSec {
+    height: 100vh;
+    width: 100%;
+    background-color: #b8ccea;
+}
+
+#containerThree {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#officePic {
+    height: 80%;
+    width: 50%;
+    border-radius: 15px;
+}
+
+#missionP {
+    width: 80%;
+    color: white;
+    font-size: 2em;
+    text-shadow: 0.5px 0.5px #d3d3d3;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#fourthSec {
+    height: 100vh;
+    width: 100%;
+    background-color: #e9dddd;
+    display: flex;
+}
+
+#containerFour {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+}
+
+#officePicTwo {
+    justify-content: center;
+    height: 80%;
+    width: 60%;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#outOfPaper {
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes heading {
+	0%   {top: -500px;}
+	100% {top: 0px;}
+}
+
+@keyframes content {
+	0%   {left: -1000px;}
+	100% {left: 0;}
+}
+
+@media (max-width: 768px) {
+    @keyframes fadeIn {}
+    @keyframes fadeOut {}
+
+    html {
+        width: 99%;
+    }
+
+    body {
+        width: 99%;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    #firstSec {
+        height: 500px;
+        width: auto;
+    }
+
+    #secondSec, #thirdSec, #fourthSec {
+        width: auto;
+        height: auto;
+    }
+
+    #containerOne, #containerTwo, #containerThree, #containerFour {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    #boxOne, #boxTwo, #boxThree {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #officePic {
+        width: 80%;
+    }
+
+    #officePicTwo {
+        width: 80%;
+        height: 60%;
+    }
+}
