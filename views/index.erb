@@ -1,25 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-        <meta name="author" content="Andrew Tabudlo">
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Munder Difflin</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-        <link rel="stylesheet" href="style.css">
-
-    </head>
-    <body>
-        <nav>
-            <div class="nav-wrapper blue lighten-2">
-                <a href="#" class="brand-logo">Munder Difflin</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Staff</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
         <div id="firstSec">
             <div class="show" id="containerOne">
                 <h1>Munder Difflin</h1>
@@ -34,24 +12,43 @@
 
         <div id="secondSec">
             <div class="hidden" id="containerTwo">
-                <div id="boxOne">
-                    <h4>Now Serving International</h4>
-                    <p class="promiseP">We are excited to announce that we are now shipping across the globe! Airplane Emoji!</p>
-                    <img id="plane" src="images/plane.jpeg">
+              <div class="row">
+                  <div class="col s12 m4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="images/plane.jpeg" id="plane">
+                        <span class="card-title">Now Serving International</span>
+                      </div>
+                      <div class="card-content">
+                        <p>We are excited to announce that we are now shipping across the globe! Airplane Emoji!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img id="tree" src="images/tree.jpeg">
+                        <span class="card-title">From Tree To Printer</span>
+                      </div>
+                      <div class="card-content">
+                        <p>Our paper is made from 100% organic high quality trees grown from the ground up.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img id="plant" src="images/plant.jpeg">
+                        <span class="card-title">Quality Over Quantity</span>
+                      </div>
+                      <div class="card-content">
+                        <p>Our trees are handled by the best growers on the planet. Then we harvest them for profit.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div id="boxTwo">
-                    <h4>From Tree To Printer</h4>
-                    <p class="promiseP">Our paper is made from 100% organic high quality trees grown from the ground up.</p>
-                    <img id="tree" src="images/tree.jpeg">
-                </div>
-                <div id="boxThree">
-                    <h4>Quality Over Quantity</h4>
-                    <p class="promiseP">Our trees are handled by the best growers on the planet. Then we harvest them for profit.</p>
-                    <img id="plant" src="images/plant.jpeg">
-                </div>
-            </div>
+              </div>
         </div>
-
         <div id="thirdSec">
             <div class="hidden" id="containerThree">
                 <img id="officePic" src="images/office.jpeg">
@@ -60,15 +57,24 @@
         </div>
         <div id="fourthSec">
             <div class="hidden" id="containerFour">
-                <img id="officePicTwo" src="images/office1.jpeg">
-                <a href="#" id="outOfPaper"><h3>BUY PAPER NOW</h3></a>
-            </div>
+              <div class="row">
+                <div class="col s12 m6 offset-m3">
+                  <div class="card large">
+                    <div class="card-image">
+                      <img src="images/staff.jpg">
+                      <span class="card-title">The Best Team</span>
+                    </div>
+                    <div class="card-content">
+                      <p>Our staff consists of the best of the best in Scranton, PA.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="/staff">Check out our staff page</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="row">
+                  <a href="#" id="outOfPaper"><h2 class="white-text">BUY PAPER NOW</h2></a>
+                </div>
+              </div>
         </div>
-
-        <footer id="footer">
-            	&#169; Munder Difflin 2018
-        </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-        <script type="text/javascript" src="script.js"></script>
-    </body>
-</html>
